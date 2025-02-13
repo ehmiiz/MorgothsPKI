@@ -75,7 +75,7 @@ Through branches dark and commits free,
 Join our host with knowledge deep,
 The secrets of PKI to keep."*
 
-[![GitHub Issues](https://img.shields.io/github/issues/ehmiiz/morgothspki?style=for-the-badge&logo=github&color=darkred)](https://github.com/ehmiiz/morgoths-pki-lab/issues)
+[![GitHub Issues](https://img.shields.io/github/issues/ehmiiz/morgothspki?style=for-the-badge&logo=github&color=darkred)](https://github.com/ehmiiz/morgothspki/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/ehmiiz/morgothspki?style=for-the-badge&logo=github&color=darkred)](https://github.com/ehmiiz/morgothspki/pulls)
 
 ---
