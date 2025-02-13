@@ -18,8 +18,4 @@ Import-Module MorgothsPKI -Force -Verbose
 New-MorgothHyperV -SwitchName "PKILab"
 ```
 
-## Install the Domain Controller
-
-```powershell
-Install-MorgothDomainController -VMName "The Great Fortress of Angband"
-```
+The function will guide you through the rest of the setup process.
