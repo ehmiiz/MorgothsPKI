@@ -4,7 +4,7 @@
 
 A guide to forging your own realm of digital power in the virtual depths, structured after the hierarchical might of Arda itself.
 
-As Morgoth shaped the world through discord and dominion, you shall master the art of trust and authority in your domain, binding all servants to your will through unbreakable cryptographic chains. ⛓️
+As Morgoth, mightiest of the Valar, shaped the world through discord and dominion, so shall you master the art of trust and authority in your domain, binding all servants to your will through unbreakable cryptographic chains forged in digital fire. ⛓️
 
 ## ⚔️ Hierarchy of Power
 
@@ -23,15 +23,14 @@ As Morgoth shaped the world through discord and dominion, you shall master the a
 
 To forge this realm of power, you shall need:
 
-- Six 🏰 fortresses in the void, each built upon the foundations of the Elder King's design
+- Six 🏰 fortresses in the void, each hewn from the very bedrock of the Elder King's design
   (The latest scrolls from the Windows of the West shall serve as your blueprint)
-  - The Great Fortress of Angband 🗼, from which all dominion flows, the centre of the domain
-  - The **Dark Throne** of Morgoth himself ⚜️, isolated in its terrible might, never to be connected to lesser realms
-  - The Iron Tower of Thangorodrim 🏔️, bridging the realms of light and shadow
-  - Three Towers for the Ring-bearers: First Born 💫, Second Born ⚔️, and Stone-shapers ⚒️
-    (Each tower bearing its own purpose in the grand design)
-- Memory vast as Anfauglith (16GB will suffice)
-  (For your realm must sustain all six fortresses simultaneously)
+  - The Great Fortress of Angband 🗼, your domain controller, from which all dominion flows
+  - The **Dark Throne** of Morgoth himself ⚜️, the Root CA, isolated in its terrible might, untouched by lesser networks
+  - The Iron Tower of Thangorodrim 🏔️, your Intermediate CA, bridging the realms of light and shadow
+  - Three Towers for the Ring-bearers: The Firstborn 💫, the Secondborn ⚔️, and the Stone-shapers ⚒️
+    (Each SubCA tower bearing its own dark purpose in the grand design)
+- Memory vast as Anfauglith (16GB will suffice, for your realm must sustain all six fortresses simultaneously)
 - Storage deep as Angband's vaults (100GB)
   (Each fortress demands its share of the void)
 - A host capable of weaving realms between worlds
@@ -68,12 +67,16 @@ Note: **The Dark Throne** must remain forever separate from the network of lesse
 
 ## 🦇 Join the Dark Host
 
-In the depths of Git's endless void, I welcome those who would pledge their allegiance to our cause. Should you discover new paths of power or ways to strengthen the dominion, raise your pull request as a dark banner upon these walls.
+In the depths of Git's endless void, we welcome those who would pledge their allegiance to our cause.
 
-*"From the void I call to thee,
+Should you uncover new paths of power or ways to strengthen the dominion, raise your pull request as a dark banner upon these walls, and let your knowledge echo through the halls of digital Angband.
+
+*"From the void I summon thee,
 Through branches dark and commits free,
 Join our host with knowledge deep,
-The secrets of PKI to keep."*
+The secrets of PKI to keep,
+For in the darkness bind them all,
+Until the final commit's fall."*
 
 [![GitHub Issues](https://img.shields.io/github/issues/ehmiiz/morgothspki?style=for-the-badge&logo=github&color=darkred)](https://github.com/ehmiiz/morgothspki/issues)
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/ehmiiz/morgothspki?style=for-the-badge&logo=github&color=darkred)](https://github.com/ehmiiz/morgothspki/pulls)
