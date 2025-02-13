@@ -1,0 +1,14 @@
+# Dictionary of MorgothsPKI
+
+Morgoth = Offline Root CA
+Arda = CPU
+Valar = CPU cores
+Dominion = Virtual Switch
+Scrolls from Windows of the West = Windows Server 2022
+Sauron = Intermediate CA
+Elven Authority = Firstborn SubCA
+Human Authority = Secondborn SubCA
+Dwarf Authority = Stone-shapers SubCA
+Dark Host = Github repository
+Dark Realm = Hyper-V environment
+Fortress of Angband = Domain Controller
