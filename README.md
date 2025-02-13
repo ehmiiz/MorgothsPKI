@@ -1,4 +1,4 @@
-# Morgoth's PKI Lab 🗡️ 👑
+# Morgoth's PKI 🗡️
 
 *"And into darkness fell his star, in Mandos' chain shall ever be"*
 
