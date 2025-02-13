@@ -1,2 +1,4 @@
 .cursor
 dev
+.vscode
+.markdownlint.json
