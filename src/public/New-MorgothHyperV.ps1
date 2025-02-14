@@ -74,16 +74,51 @@ function New-MorgothHyperV {
             }
         }
 
+        # Validate the switch name
+        $switch = Get-VMSwitch -Name $SwitchName -ErrorAction SilentlyContinue
+        if (-not $switch) {
+            Write-Warning "The specified switch '$SwitchName' does not exist."
+            # Create a new switch
+            if ($PSCmdlet.ShouldProcess("Windows", "Create new virtual switch")) {
+                # Get the first connected network adapter
+                $netAdapter = Get-NetAdapter | Where-Object { $_.Status -eq 'Up' -and $_.Name -notlike "vEthernet*" } | Select-Object -First 1
+                New-VMSwitch -Name $SwitchName -NetAdapterName $netAdapter.Name -MinimumBandwidthMode Weight -ErrorAction Stop
+                Write-Verbose "Successfully created new virtual switch '$SwitchName'"
+            }
+        }
+
+        # Check for template
+        $template = Get-MorgothTemplate -Template 'WindowsServer2025'
+        
         # Prepare VM parameters
         $vhdxPath = Join-Path -Path $vhdPath -ChildPath "Morgoth.vhdx"
-        $vmParams = @{
-            Name               = "Morgoth"
-            Generation        = 2
-            MemoryStartupBytes = $MemoryGB * 1GB
-            Path              = $morgothPath
-            NewVHDPath        = $vhdxPath
-            NewVHDSizeBytes   = $VHDSizeGB * 1GB
-            SwitchName        = $SwitchName
+        
+        # If template exists, copy it, otherwise create new
+        if ($template -and (Test-Path $template)) {
+            if ($PSCmdlet.ShouldProcess("Template VHDX", "Copy to new VM")) {
+                Copy-Item -Path $template -Destination $vhdxPath
+                Write-Verbose "Copied template VHDX to: $vhdxPath"
+                
+                $vmParams = @{
+                    Name               = "Morgoth"
+                    Generation        = 2
+                    MemoryStartupBytes = $MemoryGB * 1GB
+                    Path              = $morgothPath
+                    VHDPath           = $vhdxPath
+                    SwitchName        = $SwitchName
+                }
+            }
+        }
+        else {
+            $vmParams = @{
+                Name               = "Morgoth"
+                Generation        = 2
+                MemoryStartupBytes = $MemoryGB * 1GB
+                Path              = $morgothPath
+                NewVHDPath        = $vhdxPath
+                NewVHDSizeBytes   = $VHDSizeGB * 1GB
+                SwitchName        = $SwitchName
+            }
         }
 
         # Create the VM
