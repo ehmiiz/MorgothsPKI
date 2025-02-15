@@ -6,7 +6,7 @@
     Description = 'Enter the realm where trust is forged in darkness.'
     PowerShellVersion = '5.0'
     # RequiredModules = @('DnsServer', 'ActiveDirectory')
-    FunctionsToExport = @('New-MorgothHyperV')
+    FunctionsToExport = @('Invoke-Morgoth')
     CmdletsToExport = @()
     VariablesToExport = '*'
     AliasesToExport = @()
