@@ -110,7 +110,7 @@ function New-LabmilVM {
     try {
         $labMilVMParams = @{
             Name               = $Name
-            MemoryStartUpBytes = 1GB
+            MemoryStartUpBytes = 2GB
             NewVHDPath         = "$env:HYPERMIL_V\DRIVE\$Name.vhdx"
             NewVHDSizeBytes    = 40GB
             SwitchName         = $DefaultSwitch.Name

@@ -61,6 +61,14 @@ function Invoke-Morgoth {
                          ██╔═══╝ ██╔═██╗ ██║
                          ██║     ██║  ██╗██║
                          ╚═╝     ╚═╝  ╚═╝╚═╝
+
+The Dark Lord's PKI infrastructure rises from the void.
+To begin your descent into darkness, invoke:
+
+    Get-Help Get-Angband -Full
+
+This shall reveal the path to configuring your Domain Controller, 
+the foundation of Morgoth's realm.
 "@
 
     # Only prompt for ISO if none exists
