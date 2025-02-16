@@ -1,14 +1,27 @@
 # Dictionary of MorgothsPKI
 
-Morgoth = Offline Root CA
-Arda = CPU
-Valar = CPU cores
-Dominion = Virtual Switch
-Scrolls from Windows of the West = Windows Server 2025
-Sauron = Intermediate CA
-Elven Authority = Firstborn SubCA
-Human Authority = Secondborn SubCA
-Dwarf Authority = Stone-shapers SubCA
-Dark Host = Github repository
-Dark Realm = Hyper-V environment
-Fortress of Angband = Domain Controller
+See [lore/README.md](../lore/README.md) for more information.
+
+## The Dark Hierarchy
+Morgoth = [Offline Root CA](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831574(v%3Dws.11)#designate-a-root-ca) - The Dark Lord, architect of corruption and master of all keys
+Sauron = [Intermediate CA](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831574(v%3Dws.11)#subordinate-cas) - The Lieutenant, who enforces Morgoth's will through policy
+Elven Authority = Firstborn SubCA - The corrupted Noldor, bearers of eternal certificates
+Human Authority = Secondborn SubCA - The kingdoms of Men, bound by mortal keys
+Dwarf Authority = Stone-shapers SubCA - The deep-delvers, masters of vault security
+
+## Realms of Power
+Arda = Hypervisor - The world that Morgoth seeks to dominate
+
+Dark Realm = [Hyper-V Environment](https://learn.microsoft.com/powershell/module/hyper-v/) - The shadow where Morgoth's power manifests
+
+[Fortress of Angband](https://lotr.fandom.com/wiki/Angband) = Domain Controller - The iron throne of our dominion
+
+## Tools of Dominion
+
+**Scrolls from Windows of the West** = [Windows Server 2025](https://www.microsoft.com/evalcenter/download-windows-server-2025) - Knowledge twisted to our purpose
+
+Dark Host = Github Repository
+
+## Forces of Opposition
+
+Ainur/Light = PKI related weaknesses, the forces of light (not great for the dark realm)
